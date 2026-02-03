@@ -1,5 +1,10 @@
-/* Скидання відступів і списків */
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -13,7 +18,6 @@ a {
   text-decoration: none;
 }
 
-/* Основні стилі */
 body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
@@ -24,6 +28,11 @@ body {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  height: 72px;
 }
 
 .section {
@@ -43,14 +52,8 @@ body {
   overflow: hidden;
 }
 
-/* Header */
 .header {
   border-bottom: 1px solid #e7e9fc;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -60,6 +63,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  height: 24px;
 }
 
 .logo-web {
@@ -81,7 +86,8 @@ body {
 }
 
 .nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
@@ -98,11 +104,14 @@ body {
 .contact-list {
   display: flex;
   gap: 40px;
+}
+address {
+  font-style: normal;
   margin-left: auto;
 }
-
 .contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
@@ -115,7 +124,6 @@ body {
   color: #404bbf;
 }
 
-/* Hero */
 .hero {
   background-color: #2e2f42;
   text-align: center;
@@ -150,7 +158,6 @@ body {
   background-color: #404bbf;
 }
 
-/* Section Titles */
 .section-title {
   margin-bottom: 72px;
   font-size: 36px;
@@ -159,7 +166,6 @@ body {
   text-align: center;
 }
 
-/* Features */
 .features-list {
   display: flex;
   gap: 24px;
@@ -184,7 +190,6 @@ body {
   color: #434455;
 }
 
-/* Team */
 .team {
   background-color: #f4f4fd;
 }
@@ -223,7 +228,6 @@ body {
   text-align: center;
 }
 
-/* Portfolio */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -258,7 +262,6 @@ body {
   color: #434455;
 }
 
-/* Footer */
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -278,7 +281,6 @@ body {
   color: #f4f4fd;
 }
 
-/* Глобальні правила для зображень */
 img {
   display: block;
   max-width: 100%;
